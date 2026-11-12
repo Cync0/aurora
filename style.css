@@ -1,0 +1,96 @@
+:root {
+  --accent: #059669;
+  --accent-hover: #047857;
+  --accent-light: #ecfdf5;
+  --accent-soft: #d1fae5;
+  --accent-border: #a7f3d0;
+  --accent-text: #065f46;
+  --accent-shadow: rgba(5, 150, 105, 0.25);
+}
+* {
+  font-family: 'Inter', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.25);
+  border-radius: 9999px;
+}
+.aurora-loki-logo {
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-weight: 700 !important;
+  background: linear-gradient(135deg, #6ee7b7 0%, #10b981 40%, #059669 75%, #022c22 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  filter: none !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  -webkit-text-stroke: 0 !important;
+  border: none !important;
+  letter-spacing: 0.26em !important;
+  text-transform: uppercase !important;
+  display: inline-block;
+}
+.theme-bg {
+  background-color: var(--accent);
+}
+.theme-bg:hover {
+  background-color: var(--accent-hover);
+}
+.theme-bg-light {
+  background-color: var(--accent-light);
+}
+.theme-bg-soft {
+  background-color: var(--accent-soft);
+}
+.theme-text {
+  color: var(--accent);
+}
+.theme-text-dark {
+  color: var(--accent-text);
+}
+.theme-border {
+  border-color: var(--accent-border);
+}
+.theme-shadow {
+  box-shadow: 0 4px 12px -2px var(--accent-shadow);
+}
+.theme-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .app-shell {
+    max-width: 100% !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding-bottom: 0 !important;
+  }
+  .tab-content {
+    display: none !important;
+  }
+  #reportTab {
+    display: block !important;
+  }
+  .print-box {
+    box-shadow: none !important;
+    border: 1px solid #cbd5e1 !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+}
